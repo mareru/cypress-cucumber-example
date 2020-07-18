@@ -4,5 +4,6 @@
   "validPassword": "12345",
   "invalidPassword": "test",
   "loggedInUser": "Testo Testić",
-  "invalidPasswordErrorMessage": "Invalid password"
+  "invalidPasswordErrorMessage": "Invalid password",
+  "phoneNumber": "0123-456-789"
 }

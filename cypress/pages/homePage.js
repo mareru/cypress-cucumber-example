@@ -7,9 +7,9 @@ class HomePage {
         return '.login';
     }
 
-    visit(url) {
+    visit(url, phoneNumber) {
         cy.visit(url);
-        cy.get(this.phoneNumber).should('be.visible').and('contain.text', '0123-456-789');
+        cy.get(this.phoneNumber).should('be.visible').and('contain.text', phoneNumber);
     }
 
     clickSignInButton() {

@@ -7,7 +7,7 @@ let homePage = new HomePage();
 let loginPage = new LoginPage();
 
 Given(/^I visit home page$/, function () {
-    homePage.visit(testData.baseUrl);
+    homePage.visit(testData.baseUrl, testData.phoneNumber);
 });
 
 When(/^I navigate to login page$/, function () {
