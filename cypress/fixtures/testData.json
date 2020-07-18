@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://automationpractice.com",
+  "email": "someone@test.com",
+  "validPassword": "12345",
+  "invalidPassword": "test",
+  "loggedInUser": "Testo Testić",
+  "invalidPasswordErrorMessage": "Invalid password"
+}
