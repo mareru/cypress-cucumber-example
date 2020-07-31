@@ -1,4 +1,4 @@
-class HomePage {
+export class HomePage {
     get phoneNumber() {
         return '.shop-phone';
     }
@@ -7,7 +7,7 @@ class HomePage {
         return '.login';
     }
 
-    visit(url, phoneNumber) {
+    visit(url: string, phoneNumber: string) {
         cy.visit(url);
         cy.get(this.phoneNumber).should('be.visible').and('contain.text', phoneNumber);
     }
@@ -16,5 +16,3 @@ class HomePage {
         cy.get(this.signInButton).click();
     }
 }
-
-export default HomePage;

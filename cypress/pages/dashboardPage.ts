@@ -1,4 +1,4 @@
-class DashboardPage {
+export class DashboardPage {
     get loggedInUser() {
         return '.account > span';
     }
@@ -7,13 +7,11 @@ class DashboardPage {
         return '#center_column > :nth-child(2)';
     }
 
-    verify(user) {
+    verify(user: string) {
         cy.get(this.loggedInUser).should('contain.text', user);
     }
 
-    checkInvalidPasswordErrorMessage(message) {
+    checkInvalidPasswordErrorMessage(message: string) {
         cy.get(this.errorMessage).should('contain.text', message);
     }
 }
-
-export default DashboardPage;

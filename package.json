@@ -23,12 +23,16 @@
   },
   "homepage": "https://github.com/TheBrainFamily/cypress-cucumber-example#readme",
   "dependencies": {
-    "cypress-cucumber-preprocessor": "^2.5.0"
+    "@cypress/browserify-preprocessor": "^3.0.1",
+    "cypress-cucumber-preprocessor": "^2.5.4"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
   },
   "devDependencies": {
-    "cypress": "^4.10.0"
+    "@types/cypress-cucumber-preprocessor": "^1.14.1",
+    "cypress": "^4.10.0",
+    "tsify": "^4.0.2",
+    "typescript": "^3.9.7"
   }
 }

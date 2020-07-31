@@ -1,4 +1,4 @@
-class LoginPage {
+export class LoginPage {
 
     get loginButton() {
         return '#SubmitLogin > span';
@@ -16,7 +16,7 @@ class LoginPage {
         cy.get(this.loginButton).should('exist');
     }
 
-    enterCredentials(username, password) {
+    enterCredentials(username: string, password: string) {
         cy.get(this.emailField).type(username);
         cy.get(this.passwordField).type(password);
     }
@@ -25,5 +25,3 @@ class LoginPage {
         cy.get(this.loginButton).click();
     }
 }
-
-export default LoginPage;

@@ -1,4 +1,4 @@
-{
+export default {
   "baseUrl": "http://automationpractice.com",
   "email": "someone@test.com",
   "validPassword": "12345",
